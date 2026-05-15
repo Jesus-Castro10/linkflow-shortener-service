@@ -1,0 +1,14 @@
+{
+  "name": "linkflow-shortener-service",
+  "version": "1.0.0",
+  "description": "URL Shortener Service — AWS Lambda + DynamoDB",
+  "main": "src/handlers/shortenHandler.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0"
+  }
+}
