@@ -4,11 +4,17 @@
   "description": "URL Shortener Service — AWS Lambda + DynamoDB",
   "main": "src/handlers/shortenHandler.js",
   "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "bash deploy.sh all",
+    "deploy:lambda": "bash deploy.sh"
+  },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.0.0",
-    "@aws-sdk/lib-dynamodb": "^3.0.0"
+    "@aws-sdk/lib-dynamodb": "^3.0.0",
+    "typescript": "^6.0.3"
   }
 }

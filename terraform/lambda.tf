@@ -14,7 +14,7 @@ resource "aws_lambda_function" "shortener_lambda" {
 
   environment {
     variables = {
-      TABLE_NAME  = aws_dynamodb_table.shortener_table.name
+      TABLE_NAME  = aws_dynamodb_table.urls_table.name
       BASE_DOMAIN = var.domain
     }
   }

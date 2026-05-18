@@ -29,7 +29,7 @@ resource "aws_iam_policy" "shortener_dynamodb_policy" {
           "dynamodb:PutItem",
           "dynamodb:GetItem"
         ]
-        Resource = data.aws_dynamodb_table.shortener_table.arn
+        Resource = resource.aws_dynamodb_table.urls_table.arn
       }
     ]
   })

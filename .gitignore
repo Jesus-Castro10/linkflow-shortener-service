@@ -1,8 +1,8 @@
 # compiled output
-/app/dist
-/app/node_modules
-/app/build
-app/.angular
+/dist
+/node_modules
+/build
+/.angular
 
 # Logs
 logs
@@ -114,3 +114,6 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+function.zip
+deploy.sh
